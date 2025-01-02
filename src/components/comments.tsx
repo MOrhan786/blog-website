@@ -2,14 +2,14 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { Avatar, AvatarImage, AvatarFallback } from '../components/ui/avatar'
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { X } from 'lucide-react'
- import ReviewCard from './ReviewCard'
- import { createComment, deleteComment, myFetch, updateComment } from '@/services/create'
+import ReviewCard from './ReviewCard'
+import { createComment, deleteComment, myFetch, updateComment } from '@/services/create'
 import { Toaster, toast } from 'sonner';
 
 
@@ -190,5 +190,4 @@ const deleteFunction = async (_id: string) => {
 
   )
 }
-
 
